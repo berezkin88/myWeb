@@ -6,8 +6,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
@@ -41,7 +39,7 @@ table {
   z-index: -1; }
 
 .header_background {
-  height: 500px;
+  height: 350px;
   width: 100%; }
 
 body {
@@ -49,38 +47,57 @@ body {
 
 main {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 11em auto;
   max-width: 1200px;
-  top: 300px; }
+  top: 11em; }
+  main .content.position_and_contact_info {
+    background-color: #e0621d; }
+  main .info {
+    position: absolute;
+    margin: 3em auto auto 4em;
+    color: #E9E6E1; }
+    main .info #name {
+      line-height: 1.4em;
+      font-weight: 700;
+      font-size: 2.5em;
+      font-style: normal;
+      text-transform: uppercase; }
+    main .info #position {
+      padding-bottom: 1em; }
+  main .my_photo {
+    position: absolute;
+    float: left;
+    right: 0;
+    height: inherit;
+    max-width: 300px; }
+  main .content {
+    height: 400px;
+    background-color: #E9E6E1;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 4px 4px 10px black; }
+  main #line {
+    top: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 400px 0 0 100px;
+    border-color: rgba(223, 50, 50, 0) transparent transparent #e0621d;
+    position: relative;
+    float: right;
+    right: 201px; }
+  main .socials {
+    margin-top: 3em; }
+    main .socials .social_links {
+      padding-right: 4em; }
 
-.content {
-  width: 1200px;
-  height: 400px;
-  background-color: #E9E6E1;
-  margin-bottom: 20px;
-  position: relative;
-  float: left; }
+.content.position_and_contact_info p {
+  margin: 0.8em auto;
+  font-size: 1.2em; }
 
-.my_photo {
-  position: absolute;
-  float: left;
-  right: 0;
-  height: inherit; }
+.short_presentation, .education, .skills, .experience, .interests {
+  padding: 2em;
+  font-size: 1.2em;
+  line-height: 1.7em; }
 
-#line {
-  top: 0;
-  z-index: 1;
-  position: absolute;
-  border-style: solid;
-  border-width: 400px 0 0 100px;
-  border-color: rgba(223, 50, 50, 0) transparent transparent #e0621d;
-  position: relative;
-  float: right;
-  right: 201px; }
-
-.socials {
-  position: absolute;
-  height: inherit;
-  background-color: #e0621d;
-  width: inherit; }
+footer {
+  height: 100px; }
